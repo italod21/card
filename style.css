@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Hanske Grotesk', sans-serif;
+    border: 1px solid red;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    width: clamp(15rem, 80%, 35rem);
+    flex: 0 1 25rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 1.5rem;
+}
+
+@media (max-width: 500px) {
+.card {
+    flex-direction: column;
+    
+  }
+.left, .right {
+    flex: 1;
+  }
+}
